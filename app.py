@@ -40,7 +40,8 @@ if __name__ == "__main__":
     url_str = os.environ.get('CLOUDMQTT_URL', 'mqtt://localhost:1883')
     url = urlparse.urlparse(url_str)
 
-    # # Connect
+    # Connect
+    client.username_pw_set(url.username, url.password)
     client.connect(url.hostname, url.port)
 
     client.loop()
