@@ -35,7 +35,6 @@ def on_message(client, userdata, msg):
 if __name__ == "__main__":
     client.on_connect = on_connect
     client.on_message = on_message
-    client.on_log = on_log
 
     # Parse CLOUDMQTT_URL (or fallback to localhost)
     url_str = os.environ.get('CLOUDMQTT_URL', 'mqtt://localhost:1883')
