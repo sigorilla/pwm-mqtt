@@ -1,0 +1,13 @@
+{
+  "name": "pwm-mqtt",
+  "description": "Trying MQTT with PWM",
+  "keywords": [
+    "flask",
+    "python",
+    "sample"
+  ],
+  "repository": "https://github.com/sigorilla/pwm-mqtt",
+  "addons": [
+    "cloudmqtt"
+  ]
+}
